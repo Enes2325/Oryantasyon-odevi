@@ -1,0 +1,211 @@
+
+
+
+ÖRNEK-1
+
+public class Main {
+
+     public static void main(String[] args) {
+         int sayi = 25;
+         if (sayi<20) {
+             System.out.println("Sayı 20'den küçüktür.");
+         }else if (sayi==20) {
+             System.out.println("Sayı 20'ye eşittir.");
+         }else {
+             System.out.println("Sayı 20'den büyüktür.");
+         }
+         
+         
+     }
+
+}
+
+
+
+ÖRNEK-2
+
+public class Main {
+
+     public static void main(String[] args) {
+         int sayi1 = 56;
+         int sayi2 = 98;
+         int ortalama = (sayi1+sayi2)/2;
+         
+         System.out.println("İki sayının ortalaması = " +ortalama);
+         
+     }
+
+}
+
+
+ÖRNEK-3
+
+public class Main {
+
+     public static void main(String[] args) {
+         char grade = 'A';
+         
+         switch(grade) {
+             case 'A':
+                 System.out.println("Mükemmel , geçtiniz.");
+                 break;
+             case 'B':
+                 System.out.println("Çok güzel , geçtiniz.");
+                 break;
+             case 'C':
+                 System.out.println("İyi , geçtiniz.");
+                 break;
+             case 'D':
+                 System.out.println("Fena değil , geçtiniz.");
+                 break;
+             case 'F':
+                 System.out.println("Maalesef kaldınız.");
+                 break;
+             default:
+                 System.out.println("Geçersiz bir not girdiniz.");
+         }       
+         
+     }
+
+}
+
+
+ÖRNEK-4
+
+public class Main {
+
+     public static void main(String[] args) {
+         int sayi1 = 60;
+         int sayi2 = 62;
+         int sayi3 = 84;
+         int enBuyuk = sayi1;
+
+         if (enBuyuk<sayi2) {
+             enBuyuk = sayi2;
+         }
+
+         if(enBuyuk<sayi3) {
+             enBuyuk = sayi3;
+         }
+
+         System.out.println("En büyük = " +enBuyuk);
+
+     }
+
+}
+
+
+
+ÖRNEK-5
+
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+         final double pi = 3.14;
+         Scanner giris = new Scanner(System.in);
+         System.out.print("Lütfen yarıçap değerini giriniz.");
+         double yaricap = giris.nextDouble();
+         double cevre = 2*pi*yaricap;
+         System.out.print(yaricap + "yarıçaplı dairenin çevresi " + cevre "dir.");
+
+
+
+     }
+
+}
+
+
+
+ÖRNEK-6
+
+public class Main {
+
+     public static void main(String[] args) {
+         float b=20.5f;
+         
+         int a=(int)b;
+         System.out.println(b);
+         System.out.println(a);
+
+     }
+
+}
+
+
+
+ÖRNEK-7
+
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+         
+         System.out.println("Vize notunuzu giriniz.");
+         int vize = scanner.nextInt();
+         
+         System.out.println("Final notunuzu giriniz.");
+         int finall = scanner.nextInt();
+         
+         double ortalama = vize*0.4+finall*0.6;
+         
+         System.out.println("Ortalamanız = " + ortalama);
+         
+     }
+
+}
+
+
+
+ÖRNEK-8
+
+public class Main {
+
+     public static void main(String[] args) {
+         float sayi1 = 2.5f;
+         float sayi2 = 1.5f;
+         float carpim = sayi1 * sayi2;
+         
+         System.out.println("Sayıların çarpımının sonucu = " + carpim);
+
+     }
+
+}
+
+
+
+ÖRNEK-9
+
+public class Main {
+
+     public static void main(String[] args) {
+         int bolunen = 25 , bolen = 3;
+         
+         int bolum = bolunen / bolen;
+         int kalan = bolunen % bolen;
+         
+         System.out.println("Bölüm = " + bolum);
+         System.out.println("Kalan = " + kalan);
+
+     }
+
+}
+
+
+
+ÖRNEK-10
+
+public class Main {
+
+     public static void main(String[] args) {
+        System.out.println("3.5*4 / 2-2.5");
+        System.out.println(3.5*4 / 2-2.5);
+
+     }
+
+}
+
+
